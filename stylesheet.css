@@ -1,0 +1,627 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+}
+html { scroll-behavior: smooth;}
+.container{
+    max-width: 1500px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*ヘッダー*/
+header{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(139, 139, 139);
+    position:fixed;
+    top: 0px;
+    z-index:10;
+}
+.header-left h3{
+    font-family: 'Vollkorn', serif;
+    color: white;
+    float: left;
+    margin-left: 30px;
+}
+.header-right{
+    float: right;
+    transition: all 0.5s;
+    margin-right: 20px;
+}
+.header-right a{
+    display: block;
+    line-height: 60px;
+    padding: 0 25px;
+    color: white;
+    float: left;
+}
+.header-right a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-icon2{
+    display: none;
+}
+.menu-icon {
+    width: 100px;
+    text-align: center;
+    color: white;
+    float: right;
+    font-size: 25px;
+}
+.menu-icon2 a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+ul.header-dropmenu {
+    margin: 0;
+    padding: 0;
+    color: white;
+    float: right;
+    font-size: 25px;
+  }
+  ul.header-dropmenu > li {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  ul.header-dropmenu li a {
+    background-color: rgb(170, 168, 168);
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  ul.header-dropmenu li ul {
+    visibility: hidden;
+    width: 100%;
+    list-style: none;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+  }
+  ul.header-dropmenu li:hover ul {
+    visibility: visible;
+    background-color: rgb(139, 139, 139,0.3);
+  }
+  ul.header-dropmenu li ul li {
+    transition: all .3s ease;
+}
+
+  
+/*フッダー*/
+footer{
+    width: 100%;
+    text-align: center;
+    z-index: 50px;
+    height: 50px;
+}
+footer img{
+    float:right;
+    width: 80px;
+}
+.footer-container{
+    width: auto;
+}
+footer h5{
+    display: inline;
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.footer-left{
+    padding-top: 5px;
+    text-align: center;
+}
+.footer-left p{
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+/*1画面下のグレーゾーン*/
+.hello{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    display: block;
+    text-align: center;
+    background-color: #919191;
+}
+.hello1{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 1px;
+    margin: 0%;
+}
+
+
+/*タイトル*/
+.box{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+.center {
+    font-family: 'Vollkorn', serif;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 33px;
+}
+
+
+/*HOME*/
+.top-wrapper{
+    position: relative;
+    padding-top: 450px;
+    background-image: url(Group.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+}
+.title{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: none;
+    opacity: 0.7;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+.top-wrapper p{
+    display: none;
+    opacity: 0.7;
+    font-size: 70px;
+}
+.top-wrapper .bgImg {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+}
+  /* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.top-wrapper .src1 {
+    background-image : url(Group.png);   /* 背景の画像を指定 */
+    background-size: cover;
+  }
+.top-wrapper .src2 {
+    background-image : url(top.png);   /* 背景の画像を指定 */
+    animation-delay  : 5s;
+    background-size: cover;
+}
+.top-wrapper .src3 {
+    background-image : url(room.png);   /* 背景の画像を指定 */
+    animation-delay  : 10s;
+    background-size: cover;
+}
+.top-wrapper .src4 {
+    background-image : url(plant.png);   /* 背景の画像を指定 */
+    animation-delay  : 15s;
+    background-size: cover;
+}
+@keyframes bgAnime {
+     0% { opacity: 0; }
+     5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+   100% { opacity: 0; }
+}
+
+
+/*2画面*/
+.lesson-wrapper{
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 50px;
+    height: 600px;
+}
+.lesson-container{
+    margin-bottom: 30px;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    padding-right: 15px;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #7bbff7 0%, #cde4f8 90%, #cde4f8 90%, #d8fa98 100%);
+}
+.lesson-container h2{
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+.lesson-container p{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 6%;
+    width: 88%;
+    line-height: 2;
+}
+.pokemon{
+    position: absolute;
+    opacity: 0;
+    top: 66px;
+    left: 613px;
+}
+
+
+/*3画面*/
+.lesson-wrapper2{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 1px solid #eee;
+}
+.lessons{
+    height: auto;
+    padding: 10px 0;
+}
+.lesson{
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    width: 96%;
+    margin-left: 2%;
+    background-color: #eee;
+    border-radius: 8px;
+}
+.lesson h1{
+    font-size: 40px;
+    font-family: 'Vollkorn', serif;
+    margin: 0%;
+}
+.lesson img{
+    display: inline-block;
+    width: 50%;
+    padding: 10px 30px 0 30px;
+    height: 280px;
+    object-fit: cover;
+    object-position: left bottom;
+}
+ .lesson-1{
+    padding: 0%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    position: relative;
+    padding-top: 7px;
+ }
+ .lesson-1 h2{
+    text-align: left;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 5%;
+    width: 90%;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.7;
+
+ }
+.lesson-1 a{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    bottom: 5px;
+ }
+a.btn-border {
+    border: 2px solid black;
+    border-radius: 8px;
+    background: #fff;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  a.btn-border:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    content: '';
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+    border-radius: 0 50% 50% 0;
+    background: black;
+    ;
+  } 
+  a.btn-border:hover:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    content: "＞";
+    -webkit-transform: translateX(460%) translateY(.5rem);
+    transform: translateX(530%) translateY(.40rem);
+    color: #fff;
+    border-radius: 50%;
+}
+.btn{
+    text-align: center;
+    color: black;
+    opacity: 0.8;
+    padding: 6px 18px;
+    border-radius: 10px;
+}
+
+
+/*イベント*/
+.slide-wrapper {
+    text-align: center;
+    padding: 50px 0;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+.event{
+    position: relative;
+    height: 400px;
+    width: auto;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+    margin: 2em 0;
+    background: #e0e0e0;
+    box-shadow: 0px 0px 0px 10px #e0e0e0;
+    border: dashed 2px white;
+}
+.even-img {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 20px 0 20px;
+    overflow: hidden;
+    width: 280px;
+}
+  .even-img img{
+    height: 200px;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform .6s ease;/* ゆっくり変化させる */
+  }
+  .even-img:hover img {
+    transform: scale(1.1);/* 拡大 */
+  }
+.sns{
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    padding-top: 5px;
+    display: inline-block;
+}
+  .instagram {
+    background-color: #c045cd;
+    margin-right: 15px;
+  }
+  .twitter {
+    background-color: #55acee;
+  }
+  .btn2{
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    padding: 6px 8px;
+    border-radius: 20px;
+  }
+  .btn2:hover {
+    opacity: 1;
+}
+.eve-p{
+    display: inline;
+    font-size: 12px;
+    color: #9da1a2;
+    padding-left: 30px;
+}
+.coment-box{
+    text-align: center;
+    display: inline-block;
+    margin: 5px 0 10px 0;
+    padding-top: 10px;
+    height: 150px;
+    border-radius: 4px;
+    background-color: white;
+    width: 260px;
+}
+.coment{
+    font-size: 17px;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+/*スライダーのためのcss*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
+  .slider img {
+    width: auto;
+    height: 180px;
+    object-fit: cover;
+  }
+  .slider .slick-slide {
+  transform: scale(0.8);/*左右の画像のサイズを80%に*/
+  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;/*透過50%*/
+  } 
+  .slider .slick-slide.slick-center{
+  transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+  opacity: 1;/*透過なし*/
+}
+/*矢印の設定*/
+  /*戻る、次へ矢印の位置*/
+  .slick-prev, 
+  .slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 40%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 20px;
+    width: 20px;
+  }
+  .slick-prev {/*戻る矢印の位置と形状*/
+    left: -3.0%;
+    transform: rotate(-135deg);
+  }
+  .slick-next {/*次へ矢印の位置と形状*/
+    right: -3.0%;
+    transform: rotate(45deg);
+  }
+  /*ドットナビゲーションの設定*/
+  .slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+  }
+  .slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+  }
+  .slick-dots button {
+    color: transparent;
+    outline: none;
+    width:10px;/*ドットボタンのサイズ*/
+    height:10px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+  }
+  .slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+/* Apply cursor pointer to button elements */
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"],
+  [role="button"] {
+    cursor: pointer;
+  }
+  /* Remove inner padding and border in Firefox 4+ */
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: 0;
+    padding: 0;
+  }
+  /* Remove the default button styling in all browsers */
+  button,
+  input,
+  select,
+  textarea {
+    background-color: transparent;
+    border-style: none;
+    color: inherit;
+}
+
+
+/*メッセージ*/
+.message-wrapper{
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+}
+.me{
+    padding-bottom: 20px;
+}
+.map{
+    display: inline-block;
+    width: 485px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.contact-form{
+    display: inline-block;
+}
+.line{
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border: solid 3px #06C755;
+}
+.line-sen{
+    margin-left: 25px;
+    display: inline-block;
+    text-align: center;
+}
+.line-img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 200px;
+    width: 200px;
+}
+.official{
+    font-family: 'Vollkorn', serif;
+    font-size: 23px;
+}
+.id{
+    margin: 0%;
+    display: inline-block;
+    width: 250px;
+    font-size: 15px;
+}
+.line-icon{
+    background-color: #06C755;
+    font-size: 20px;
+    padding: 5px;
+}
+.btn1{
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 15px;
+    padding: 6px 8px;
+    border-radius: 20px;
+}
+.btn1:hover {
+    opacity: 1;
+}
+.stuff{
+    border-radius: 10px;
+    position: relative;
+    background-color: black;
+    height: 200px;
+    width: 485px;
+    margin-bottom: 10px;
+}
+.stuff img{
+    border-radius: 10px;
+    height: 200px;
+    width: 485px;
+    object-fit: cover;
+    object-position: 29% 29%;
+    opacity: 0.6;
+}
+.stuff p{
+    font-family: 'Vollkorn', serif;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 30px;
+    text-align: left;
+}
