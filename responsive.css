@@ -55,6 +55,57 @@
 }
 /*スマートフォン*/
 @media(max-width: 670px){
+        .top-wrapper{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+    .lesson-wrapper{
+        height: auto;
+    }
+    .lesson{
+        height: auto;
+    }
+    .eve-p{
+        display: none;
+    }
+    .coment-box{
+        margin-top: 10px;
+        height: 160px;
+    }
+    .lesson-container{
+        height: auto;
+    }
+    .lesson-container h2{
+        padding-top: 5px;
+    }
+    .lesson-container p{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 2;
+    }
+    .lesson-1 h2{
+        font-size: 20px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .lesson img{
+        width: 100%;
+        height: 200px;
+    }
+    .lesson-1{
+        width: 100%;
+    }
+    .contents-item{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .message-container{
+        width: 50%;
+        margin-bottom: 50px;
+    }
     .contents-item{
         width: 100%;
     }
