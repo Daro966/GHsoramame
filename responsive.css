@@ -53,3 +53,28 @@
     }
 
 }
+@media(max-width: 670px){
+    .contents-item{
+        width: 100%;
+    }
+    .top-wrapper{
+        text-align: left;
+    }
+    .menu-icon2{
+        display: block;
+
+    }
+    .menu-icon{
+        line-height: 60px;
+        padding: 0 25px;
+        color: white;
+        float: right;
+        margin-right: 10px;
+    }
+    .menu-icon :hover{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .header-right{
+        display: none;
+    }
+}
