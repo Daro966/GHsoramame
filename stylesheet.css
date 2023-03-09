@@ -254,12 +254,6 @@ footer h5{
     width: 88%;
     line-height: 2;
 }
-.pokemon{
-    position: absolute;
-    opacity: 0;
-    top: 66px;
-    left: 613px;
-}
 
 
 /*3画面*/
@@ -309,7 +303,7 @@ footer h5{
  .lesson-1 h2{
     text-align: left;
     overflow: hidden;
-    margin: 10px;
+    margin: 30px;
     margin-left: 5%;
     width: 90%;
     font-weight: normal;
