@@ -22,13 +22,13 @@
         height: auto;
     }
     .lesson-container h2{
+        margin-top: 10px;
         padding-top: 5px;
     }
     .lesson-container p{
         width: 90%;
         margin-left: 5%;
-        margin-top: 5px;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 2;
     }
     .lesson-1 h2{
@@ -53,6 +53,7 @@
     }
 
 }
+/*スマートフォン*/
 @media(max-width: 670px){
     .contents-item{
         width: 100%;
