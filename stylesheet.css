@@ -553,11 +553,11 @@ a.btn-border {
     display: inline-block;
 }
 .line{
+    width: 485px;
     border-radius: 5px;
     text-align: center;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     position: relative;
     border: solid 3px #06C755;
 }
@@ -567,10 +567,9 @@ a.btn-border {
     text-align: center;
 }
 .line-img{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 200px;
-    width: 200px;
+    margin: 5px 0;
+    height: 190px;
+    width: 190px;
 }
 .official{
     font-family: 'Vollkorn', serif;
@@ -601,25 +600,24 @@ a.btn-border {
 .stuff{
     border-radius: 10px;
     position: relative;
-    background-color: black;
-    height: 200px;
+    height: 220px;
     width: 485px;
     margin-bottom: 10px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: solid 3px #06C755;
 }
 .stuff img{
-    border-radius: 10px;
-    height: 200px;
-    width: 485px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: 29% 29%;
-    opacity: 0.6;
+    border-radius: 7px;
 }
-.stuff p{
+.stuff h3{
     font-family: 'Vollkorn', serif;
-    font-size: 25px;
+    font-size: 17px;
     position: absolute;
-    color: white;
-    top: 0;
-    left: 30px;
+    top: 80px;
+    left: 150px;
     text-align: left;
 }
