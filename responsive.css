@@ -51,15 +51,7 @@
         width: 50%;
         margin-bottom: 50px;
     }
-    .map{
-        width: 100%;
-    }
-    .line{
-        width: 100%;
-    }       
-    .stuff{
-        width: 100%;
-    }
+
 }
 /*スマートフォン*/
 @media(max-width: 670px){
@@ -86,13 +78,17 @@
     .header-right{
         display: none;
     }
+    .map{
+        width: 100%;
+    }
     .line{
         display: block;
-        width: 100%;
+        width: 400px;
     }
     .line-img{
         display: none;
     }
     .stuff{
         width: 100%;
+    }
 }
