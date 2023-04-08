@@ -86,4 +86,10 @@
     .header-right{
         display: none;
     }
+        .line{
+        width: 100%;
+    }
+    .stuff{
+        width: 100%;
+    }
 }
