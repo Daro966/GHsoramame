@@ -51,7 +51,15 @@
         width: 50%;
         margin-bottom: 50px;
     }
-
+    .map{
+        width:auto;
+    }
+    .line{
+        width: auto
+    }
+    .stuff{
+        width: auto
+    }
 }
 /*スマートフォン*/
 @media(max-width: 670px){
