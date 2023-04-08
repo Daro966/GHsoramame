@@ -86,13 +86,13 @@
     .header-right{
         display: none;
     }
-        .line{
+    .line{
+        display: block;
         width: 100%;
     }
-        .line-img{
-          visibility: hidden;
-    }    
+    .line-img{
+        display: none;
+    }
     .stuff{
         width: 100%;
-    }
 }
