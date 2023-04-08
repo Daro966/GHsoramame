@@ -57,6 +57,9 @@
     .line{
         width: 100%;
     }
+    .line-img{
+       display: none;
+    }           
     .stuff{
         width: 100%;
     }
